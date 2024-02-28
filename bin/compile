@@ -55,7 +55,7 @@ if [ -n "$FLUTTER_VERSION" ]; then
     print "Installing Flutter SDK version : $FLUTTER_VERSION"
     cd $BUILD_DIR/flutter
     bin/flutter channel master
-    git status
+    git checkout 3.16.9
 #    flutter/bin/flutter downgrade $FLUTTER_VERSION --quiet | indent
   fi
   rm flutter.json
