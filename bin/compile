@@ -55,7 +55,7 @@ if [ -n "$FLUTTER_VERSION" ]; then
     print "Installing Flutter SDK version : $FLUTTER_VERSION"
     cd $BUILD_DIR/flutter
     pwd
-    flutter/bin/flutter --version
+    ls -a
 #    flutter/bin/flutter downgrade $FLUTTER_VERSION --quiet | indent
   fi
   rm flutter.json
