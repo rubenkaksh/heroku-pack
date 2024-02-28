@@ -56,6 +56,8 @@ if [ -n "$FLUTTER_VERSION" ]; then
     cd $BUILD_DIR/flutter
     bin/flutter channel master
     git checkout 3.16.9
+    cd ..
+    flutter --version
 #    flutter/bin/flutter downgrade $FLUTTER_VERSION --quiet | indent
   fi
   rm flutter.json
