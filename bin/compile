@@ -54,7 +54,7 @@ if [ -n "$FLUTTER_VERSION" ]; then
   if [ "$FLUTTER_VERSION" != "$FLUTTER_INSTALLED_VERSION" ]; then
     print "Installing Flutter SDK version : $FLUTTER_VERSION"
     cd $BUILD_DIR/flutter
-    git checkout 3.16.9
+    pwd
     flutter/bin/flutter --version
 #    flutter/bin/flutter downgrade $FLUTTER_VERSION --quiet | indent
   fi
